@@ -1,7 +1,7 @@
 import os
 
-from dotenv import load_dotenv
-load_dotenv()
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
 
 MAX_NEW_TOKENS = int(os.getenv('MAX_NEW_TOKENS'))
 NUM_BEAMS = int(os.getenv('NUM_BEAMS'))
